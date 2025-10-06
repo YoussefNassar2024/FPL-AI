@@ -1,0 +1,151 @@
+{
+    "current": [
+        {
+            "event": 1,
+            "points": 70,
+            "total_points": 70,
+            "rank": 958151,
+            "rank_sort": 960850,
+            "overall_rank": 958151,
+            "percentile_rank": 15,
+            "bank": 15,
+            "value": 1000,
+            "event_transfers": 0,
+            "event_transfers_cost": 0,
+            "points_on_bench": 19
+        },
+        {
+            "event": 2,
+            "points": 54,
+            "total_points": 124,
+            "rank": 4331919,
+            "rank_sort": 4333839,
+            "overall_rank": 1242805,
+            "percentile_rank": 45,
+            "bank": 30,
+            "value": 1001,
+            "event_transfers": 1,
+            "event_transfers_cost": 0,
+            "points_on_bench": 13
+        },
+        {
+            "event": 3,
+            "points": 42,
+            "total_points": 166,
+            "rank": 7791377,
+            "rank_sort": 7792833,
+            "overall_rank": 2304325,
+            "percentile_rank": 70,
+            "bank": 13,
+            "value": 1007,
+            "event_transfers": 1,
+            "event_transfers_cost": 0,
+            "points_on_bench": 3
+        },
+        {
+            "event": 4,
+            "points": 78,
+            "total_points": 244,
+            "rank": 1475616,
+            "rank_sort": 1477819,
+            "overall_rank": 1240414,
+            "percentile_rank": 15,
+            "bank": 17,
+            "value": 1007,
+            "event_transfers": 0,
+            "event_transfers_cost": 0,
+            "points_on_bench": 23
+        },
+        {
+            "event": 5,
+            "points": 31,
+            "total_points": 275,
+            "rank": 10361394,
+            "rank_sort": 10362090,
+            "overall_rank": 2558508,
+            "percentile_rank": 90,
+            "bank": 27,
+            "value": 1012,
+            "event_transfers": 1,
+            "event_transfers_cost": 0,
+            "points_on_bench": 21
+        },
+        {
+            "event": 6,
+            "points": 71,
+            "total_points": 342,
+            "rank": 1034355,
+            "rank_sort": 1035704,
+            "overall_rank": 1613748,
+            "percentile_rank": 10,
+            "bank": 2,
+            "value": 1014,
+            "event_transfers": 2,
+            "event_transfers_cost": 4,
+            "points_on_bench": 7
+        },
+        {
+            "event": 7,
+            "points": 35,
+            "total_points": 377,
+            "rank": 7084894,
+            "rank_sort": 7086354,
+            "overall_rank": 1973998,
+            "percentile_rank": 60,
+            "bank": 5,
+            "value": 1016,
+            "event_transfers": 1,
+            "event_transfers_cost": 0,
+            "points_on_bench": 20
+        }
+    ],
+    "past": [
+        {
+            "season_name": "2017/18",
+            "total_points": 500,
+            "rank": 5767027
+        },
+        {
+            "season_name": "2018/19",
+            "total_points": 1603,
+            "rank": 5150773
+        },
+        {
+            "season_name": "2020/21",
+            "total_points": 1521,
+            "rank": 6453398
+        },
+        {
+            "season_name": "2021/22",
+            "total_points": 1790,
+            "rank": 4910773
+        },
+        {
+            "season_name": "2022/23",
+            "total_points": 2241,
+            "rank": 2199527
+        },
+        {
+            "season_name": "2023/24",
+            "total_points": 2310,
+            "rank": 948425
+        },
+        {
+            "season_name": "2024/25",
+            "total_points": 2331,
+            "rank": 1164225
+        }
+    ],
+    "chips": [
+        {
+            "name": "wildcard",
+            "time": "2025-08-30T10:46:53.897543Z",
+            "event": 4
+        },
+        {
+            "name": "3xc",
+            "time": "2025-10-02T20:49:53.951972Z",
+            "event": 7
+        }
+    ]
+}
