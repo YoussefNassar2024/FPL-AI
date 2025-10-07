@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPL Analyst Report - GW 8</title>
+    <!-- Load Tailwind CSS via CDN for simple, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fc; }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-800">FPL Analyst Report</h1>
+            <h2 class="text-2xl font-semibold text-gray-600 mt-2">Gameweek 8 Transfer & Lineup Plan</h2>
+            <p class="text-sm text-gray-400 mt-1">Generated: 2025-10-07 03:25:41</p>
+        </header>
+
+        <!-- 1. Model Performance -->
+        <div class="card p-6 mb-8">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">1. Model Performance & Backtesting Summary</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <p class="text-sm font-medium text-indigo-600">Average MAE</p>
+                    <p class="text-3xl font-extrabold text-indigo-900 mt-1">3.00 Pts</p>
+                </div>
+
+                <div class="bg-indigo-50 p-4 rounded-lg col-span-2">
+                    <p class="text-sm font-medium text-indigo-600">Top Predicted Scorer for GW 8</p>
+                    <p class="text-xl font-extrabold text-indigo-900 mt-1">
+                        Raya 
+                        <span class="text-base text-gray-600">(4.09 Pts)</span>
+                    </p>
+                </div>
+            </div>
+            <p class="mt-4 text-sm text-gray-500">
+                Prediction Reliability: Medium. *The model relies heavily on recent form and cost, and predictions should be cross-referenced with injury/suspension news.*
+            </p>
+        </div>
+
+        <!-- 3. Captaincy and Lineup -->
+        <div class="card p-6 mb-8">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">3. GW 8 Captaincy & Lineup Selection</h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div class="p-4 rounded-lg border border-yellow-300 bg-yellow-50">
+                    <p class="text-lg font-semibold text-yellow-800">Captain (C)</p>
+                    <p class="text-3xl font-extrabold text-yellow-900 mt-1">Haaland</p>
+                    <p class="text-sm text-yellow-700">Predicted Score: 19.10 Pts (x2)</p>
+                </div>
+                <div class="p-4 rounded-lg border border-gray-300 bg-gray-50">
+                    <p class="text-lg font-semibold text-gray-700">Vice-Captain (VC)</p>
+                    <p class="text-3xl font-extrabold text-gray-900 mt-1">Salah</p>
+                    <p class="text-sm text-gray-600">Predicted Score: 0.00 Pts</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="bg-green-50 p-3 rounded-lg text-center">
+                    <p class="text-sm font-medium text-green-600">Optimal XI Score</p>
+                    <p class="text-xl font-extrabold text-green-800">50.00 Pts</p>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg text-center md:col-span-2">
+                    <p class="text-sm font-medium text-green-600">Optimal Formation</p>
+                    <p class="text-xl font-extrabold text-green-800">N/A</p>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-semibold text-gray-700 mt-6 mb-3">Optimal Lineup Details</h4>
+            <div class="overflow-x-auto rounded-lg border">
+                <table class="min-w-full text-sm text-gray-800">
+                    <thead class="bg-gray-200 uppercase text-xs text-gray-600">
+                        <tr>
+                            <th class="p-3 text-left">Status</th>
+                            <th class="p-3 text-left">Position</th>
+                            <th class="p-3 text-left">Player</th>
+                            <th class="p-3 text-right">Predicted Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="4" class="p-3 text-center text-gray-500">Optimal lineup data is missing.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 2. Transfer Recommendations -->
+        <div class="card p-6 mb-8">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">2. Top Transfer Recommendations</h3>
+
+            <h4 class="text-xl font-semibold text-gray-700 mt-6 mb-3">A. Best 1-Transfer Option</h4>
+            <div class="overflow-x-auto rounded-lg border">
+                <table class="min-w-full text-sm text-gray-800">
+                    <thead class="bg-gray-200 uppercase text-xs text-gray-600">
+                        <tr>
+                            <th class="p-3 text-left">Action (OUT &rarr; IN)</th>
+                            <th class="p-3 text-right">Net Score Gain</th>
+                            <th class="p-3 text-center">Point Hit</th>
+                            <th class="p-3 text-right">New Bank</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr><td colspan="4" class="p-3 text-center text-gray-500">No beneficial single transfers found.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="text-xl font-semibold text-gray-700 mt-6 mb-3">B. Best 2-Transfer Options</h4>
+            <p class="text-sm text-gray-500 mb-3">
+                This analysis evaluates if taking a point hit is worth the risk for a substantial score upgrade.
+            </p>
+            <div class="overflow-x-auto rounded-lg border">
+                <table class="min-w-full text-sm text-gray-800">
+                    <thead class="bg-gray-200 uppercase text-xs text-gray-600">
+                        <tr>
+                            <th class="p-3 text-left">Transfers (OUT &rarr; IN)</th>
+                            <th class="p-3 text-center">Hit</th>
+                            <th class="p-3 text-right">Gross Gain</th>
+                            <th class="p-3 text-right">Net Gain</th>
+                            <th class="p-3 text-right">New Bank</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr><td colspan="5" class="p-3 text-center text-gray-500">No beneficial multi-transfers found.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer class="text-center text-sm text-gray-500 mt-10">
+            FPL Data Analysis powered by Random Forest Model.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Prediction Report: RF vs XGB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fc; }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800">Football Match Prediction</h1>
+            <h2 class="text-xl font-semibold text-gray-600 mt-2">Random Forest vs. XGBoost Comparison</h2>
+            <p class="text-sm text-gray-500 mt-1">Report Generated: 2025-10-07 03:28:01</p>
+        </header>
+
+        <!-- Model Metrics -->
+        <div class="card p-6 mb-8">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">1. Classification Model Accuracy (Match Result)</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 text-center">
+                    <p class="text-sm font-medium text-blue-600">Random Forest Classifier</p>
+                    <p class="text-4xl font-extrabold text-blue-800 mt-1">78.00%</p>
+                    <p class="text-sm text-gray-500">Result Prediction Accuracy (on Test Data)</p>
+                </div>
+
+                <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-200 text-center">
+                    <p class="text-sm font-medium text-indigo-600">XGBoost Classifier</p>
+                    <p class="text-4xl font-extrabold text-indigo-800 mt-1">81.00%</p>
+                    <p class="text-sm text-gray-500">Result Prediction Accuracy (on Test Data)</p>
+                </div>
+            </div>
+            <p class="mt-4 text-sm text-gray-500">
+                *Note: The accuracy indicates how well each model predicts Home/Draw/Away based on historical data. Regression models for scores were not formally evaluated here but are used below.*
+            </p>
+        </div>
+
+        <!-- Prediction Table -->
+        <div class="card p-6 mb-8">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">2. Predicted Outcomes for Upcoming Matches</h3>
+
+            <div class="overflow-x-auto rounded-lg border border-gray-200">
+                <table class="min-w-full text-sm text-gray-600">
+                    <thead class="bg-gray-100 uppercase text-xs text-gray-600">
+                        <tr>
+                            <th class="px-4 py-3 text-left">Fixture</th>
+                            <th class="px-4 py-3 text-center">Random Forest Prediction</th>
+                            <th class="px-4 py-3 text-center">XGBoost Prediction</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="border-b hover:bg-gray-50 bg-yellow-50/50">
+            <td class="px-4 py-3 font-semibold text-gray-800">Liverpool vs Arsenal</td>
+            <td class="px-4 py-3 text-center">
+                <div class="space-y-1">
+                    <p class="font-mono text-lg font-bold text-blue-700">5-1</p>
+                    <span class="px-2 py-1 text-xs font-bold rounded-full bg-green-200 text-green-800">Home Win</span>
+                </div>
+            </td>
+            <td class="px-4 py-3 text-center">
+                <div class="space-y-1">
+                    <p class="font-mono text-lg font-bold text-indigo-700">5-0</p>
+                    <span class="px-2 py-1 text-xs font-bold rounded-full bg-green-200 text-green-800">Home Win</span>
+                </div>
+            </td>
+        </tr>
+        
+        <tr class="border-b hover:bg-gray-50 bg-yellow-50/50">
+            <td class="px-4 py-3 font-semibold text-gray-800">Brentford vs Chelsea</td>
+            <td class="px-4 py-3 text-center">
+                <div class="space-y-1">
+                    <p class="font-mono text-lg font-bold text-blue-700">1-5</p>
+                    <span class="px-2 py-1 text-xs font-bold rounded-full bg-red-200 text-red-800">Away Win</span>
+                </div>
+            </td>
+            <td class="px-4 py-3 text-center">
+                <div class="space-y-1">
+                    <p class="font-mono text-lg font-bold text-indigo-700">2-5</p>
+                    <span class="px-2 py-1 text-xs font-bold rounded-full bg-red-200 text-red-800">Away Win</span>
+                </div>
+            </td>
+        </tr>
+        
+        <tr class="border-b hover:bg-gray-50 bg-yellow-50/50">
+            <td class="px-4 py-3 font-semibold text-gray-800">Spurs vs West Ham</td>
+            <td class="px-4 py-3 text-center">
+                <div class="space-y-1">
+                    <p class="font-mono text-lg font-bold text-blue-700">3-3</p>
+                    <span class="px-2 py-1 text-xs font-bold rounded-full bg-green-200 text-green-800">Home Win</span>
+                </div>
+            </td>
+            <td class="px-4 py-3 text-center">
+                <div class="space-y-1">
+                    <p class="font-mono text-lg font-bold text-indigo-700">4-3</p>
+                    <span class="px-2 py-1 text-xs font-bold rounded-full bg-green-200 text-green-800">Home Win</span>
+                </div>
+            </td>
+        </tr>
+        
+        <tr class="border-b hover:bg-gray-50 ">
+            <td class="px-4 py-3 font-semibold text-gray-800">Burnley vs Aston Villa</td>
+            <td class="px-4 py-3 text-center">
+                <div class="space-y-1">
+                    <p class="font-mono text-lg font-bold text-blue-700">0-5</p>
+                    <span class="px-2 py-1 text-xs font-bold rounded-full bg-red-200 text-red-800">Away Win</span>
+                </div>
+            </td>
+            <td class="px-4 py-3 text-center">
+                <div class="space-y-1">
+                    <p class="font-mono text-lg font-bold text-indigo-700">0-5</p>
+                    <span class="px-2 py-1 text-xs font-bold rounded-full bg-red-200 text-red-800">Away Win</span>
+                </div>
+            </td>
+        </tr>
+        
+        <tr class="border-b hover:bg-gray-50 ">
+            <td class="px-4 py-3 font-semibold text-gray-800">Man City vs Man Utd</td>
+            <td class="px-4 py-3 text-center">
+                <div class="space-y-1">
+                    <p class="font-mono text-lg font-bold text-blue-700">3-2</p>
+                    <span class="px-2 py-1 text-xs font-bold rounded-full bg-green-200 text-green-800">Home Win</span>
+                </div>
+            </td>
+            <td class="px-4 py-3 text-center">
+                <div class="space-y-1">
+                    <p class="font-mono text-lg font-bold text-indigo-700">3-2</p>
+                    <span class="px-2 py-1 text-xs font-bold rounded-full bg-gray-200 text-gray-800">Draw</span>
+                </div>
+            </td>
+        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-4 text-xs text-gray-500">
+                Rows highlighted in yellow indicate a disagreement between the Random Forest score prediction and the XGBoost score prediction.
+            </p>
+        </div>
+
+        <footer class="text-center text-sm text-gray-500 mt-10">
+            Machine Learning Analysis for Match Outcomes.
+        </footer>
+    </div>
+</body>
+</html>
